@@ -96,7 +96,7 @@ def mapping(zero_or_one,df):
                 icon=None,
                 popup=label,
             ).add_to(incidents)
-        else:
+        if zero_or_one==3:
             folium.Marker(
                 location=[lat, lng],
                 icon=None,
